@@ -1,0 +1,63 @@
+.info_container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    font-family: cursive;
+    background-color: rgba(109, 114, 94, 0.363);
+    border-radius: 10px;
+}
+.loading_container {
+    position: fixed; /* Keep it in the center of the viewport */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center it both horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Optional, ensures it takes the full screen width */
+    height: 100%; /* Optional, ensures it takes the full screen height */
+    z-index: 1000; /* Optional, ensures it stays on top of other elements */
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  /* background-color: rgba(255, 255, 255, 0.8); */
+}
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.poster img {
+    /* border: 2px solid white; */
+    height: 50vh;
+    width: 25vw;
+    border-top-left-radius: 10px;
+}
+.movieDetails {
+    /* border: 2px solid white; */
+    height: 50vh;
+    display: grid;
+    color: white;
+}
+
+.movieDetails h2 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.movieDetails p {
+    margin-left: 12px;
+}
+
+.navl {
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    margin-left: 5px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    cursor: pointer;
+    color: white;
+}
